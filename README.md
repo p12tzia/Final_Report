@@ -102,6 +102,15 @@ responsiveVoice.cancel();
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 ```
 Εν κατακλείδι, για την τελευταία αλλαγή δημιουργήθηκε μία ακόμη επιλογή ομαδοποίησης των δεδομένων (**_Split by the amount of the donation_**) η οποία κατηγοριοποιεί τις δωρεές με βάση το χρηματικό ποσό. Οι τροποποιήσεις για το συγκεκριμένο ερώτημα πραγματοποιήθηκαν σε όλα τα αρχεία.
+
+Παραδείγματος χάριν ένα απόσπασμα από τον κώδικα που δημιουργήθηκε για το ζητούμενο.
+```javascript
+function amounts(e) {
+	node.each(moveToAmounts(e.alpha));
+		node.attr("cx",function(d) {return d.x; })
+			.attr("cy", function(d) {return d.y; });
+}
+```
 ## Συμπεράσματα
 
 ## _Βιβλιογραφία_
