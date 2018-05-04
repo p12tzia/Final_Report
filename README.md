@@ -39,6 +39,19 @@ var fill = d3.scale.ordinal().range(["#FFFF99", "#FF3333", "#000033"]);
     top: 550px;
 }
 ```
+Επιπλέον, προστέθηκε το αρχείο button_sound.mp3 ώστε κάθε φορά που ο χρήστης της εφαρμογής κάνει κλίκ σε μία από τις επιλογές/κουμπιά ομαδοποίησης των δεδομένων να ακούγεται ο χαρακτηριστικός ήχος. Η συγκεκριμένη ενέργεια επιτεύχθηκε με την δημιουργία μιας νέας συνάρτησης **playSound** στον κώδικα [index.html](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/index.html) η οποία αναπαραγάγει τον ήχο.
+```
+<audio id="sound" src="button_sound.mp3"></audio>
+    <a onclick = "playSound();"></a>
+    <script>
+        function playSound() {
+          var sound = document.getElementById("sound");
+          sound.play();
+      }
+    </script>
+
+    
+```
 
 
 ## Συμπεράσματα
