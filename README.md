@@ -49,11 +49,10 @@ var fill = d3.scale.ordinal().range(["#FFFF99", "#FF3333", "#000033"]);
           sound.play();
       }
     </script>
-
-    
 ```
-
-
+```html
+<li><a href="#" role="button" class="pure-button switch" id="all-donations" onclick = "playSound()">All money</a></li>
+```
 ## Συμπεράσματα
 
 ## _Βιβλιογραφία_
