@@ -55,7 +55,7 @@ var fill = d3.scale.ordinal().range(["#FFFF99", "#FF3333", "#000033"]);
 ```html
 <li><a href="#" role="button" class="pure-button switch" id="all-donations" onclick = "playSound()">All money</a></li>
 ```
-Επίσης, για την αναζήτηση του κάθε δωρητή στο **google** δημιουργήθηκε κατάλληλη συνάρτηση ώστε να ανοίγει καινούργιο παράθυρο με τα αποτελέσματα όταν γίνεται κλίκ στην κάθε μπάλα.
+Επίσης, για την αναζήτηση του κάθε δωρητή στο **google** δημιουργήθηκε κατάλληλη συνάρτηση στο αρχείο [chart.js](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/chart.js) ώστε να ανοίγει καινούργιο παράθυρο με τα αποτελέσματα όταν γίνεται κλίκ στην κάθε μπάλα.
 ```javascript
 function search(d) { //search function 
 
@@ -64,9 +64,30 @@ function search(d) { //search function
 
 }
 ```
-Συγκεκριμένα αφού δημιουργήθηκε η συνάρτηση τοποθετήθηκε το παρακάτω κομμάτι κώδικα στην συνάρτηση **start** προκειμένου να επιτευχθεί η αναζήτηση όταν γίνεται κλίκ.
+Συγκεκριμένα αφού δημιουργήθηκε η συνάρτηση τοποθετήθηκε το παρακάτω κομμάτι κώδικα στην συνάρτηση **start** στο ίδιο αρχείο προκειμένου να επιτευχθεί η αναζήτηση όταν γίνεται κλίκ.
 ```javascript
 .on("click",search);
+```
+Επιπρόσθετα, χρησιμοποιώντας την κλάση **zoom** που δημιουργήθηκε, το ποντίκι λειτουργεί ως μεγεθυντικός φακός όταν μεταφέρεται πάνω από τις λέξεις του κειμένου. Στην περίπτωση **Split by Party** μεγεθύνεται το κάθε πεδίο ξεχωριστά.
+```html
+ <style type="text/css">
+
+        .zoom:hover {
+
+	-moz-transform: scale(1.5);
+
+        -ms-transform: scale(1.5); /* IE 9 */
+
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+
+        transform: scale(1.5);        /* (150% zoom)*/
+
+}
+</style>
+```
+Π.χ
+```html
+<h3 class="zoom">Income for each party from private sources.</h3
 ```
 ## Συμπεράσματα
 
