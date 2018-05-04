@@ -17,7 +17,7 @@
 ## Aνάλυση σχετικών έργων και εργαλείων
 
 ## Mέθοδος και Tεχνικές Aνάπτυξης
-Αρχικά, επισημαίνεται ότι ο κώδικας που χρησιμοποιήθηκε βασίζεται στην εργασία [Data Visualization](https://github.com/ioniodi/D3js-uk-political-donations) καθώς και στην [Pie Chart](https://bl.ocks.org/mbostock/3887235) η οποία συνέβαλλε στην δημιουργία ενός ακόμη **D3** διαγράμματος των ίδιων δεδομένων.  Οι αλλαγές για το πρώτο παραδοτέο της εργασίας είναι οι εξής:
+Αρχικά, επισημαίνεται ότι ο κώδικας που χρησιμοποιήθηκε βασίζεται στην εργασία [Data Visualization](https://github.com/ioniodi/D3js-uk-political-donations) καθώς και στην [Pie Chart](https://bl.ocks.org/mbostock/3887235) η οποία συνέβαλλε στην δημιουργία ενός ακόμη **D3** γραφήματος των ίδιων δεδομένων.  Οι αλλαγές για το **πρώτο παραδοτέο** της εργασίας είναι οι εξής:
 
 Η αλλαγή στα χρώματα από τις μπάλες έγινε με την τροποποίηση στην συγκεκριμένη γραμμή κώδικα του αρχείου [chart.js](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/chart.js) όπως φαίνεται παρακάτω 
 ```javascript
@@ -93,7 +93,7 @@ function search(d) { //search function
 ```javascript
 responsiveVoice.speak(donor + " " + amount + "£","UK English Male",{volume: 1}); //Βρίσκεται εντός της mouseover 
 ```
-Όταν ο δείκτης του ποντικιού δεν βρίσκεται πάνω στις μπάλες των δεδομένων τότε δεν ακούγεται η ονομασία και το ποσό της δωρεάς, αυτό επιτυγχάνεται με την συνάρτηση **_cancel()_** εντός της **mouseout**.
+Όταν το ποντίκι δεν βρίσκεται πάνω στις μπάλες των δεδομένων τότε δεν ακούγεται η ονομασία και το ποσό της δωρεάς, αυτό επιτυγχάνεται με την συνάρτηση **_cancel()_** εντός της **mouseout**.
 ```javascript
 responsiveVoice.cancel(); 
 ```
@@ -111,7 +111,21 @@ function amounts(e) {
 			.attr("cy", function(d) {return d.y; });
 }
 ```
-Επισημαίνεται η δημιουργία ενός αρχείου .csv με τα στοιχεία μου καθώς και προσθήκη 5 εικόνων από δωρητές. Συγκεκριμένα οι εικόνες των δωρητών που προστέθηκαν είναι οι εξής : **Bloomberg**, **Addison Lee**, **RAB Capital**, **Soneva** και **Vitabiotics**.
+Επισημαίνεται η δημιουργία ενός αρχείου **.csv** με τα στοιχεία μου καθώς και προσθήκη 5 εικόνων από δωρητές. Συγκεκριμένα οι εικόνες των δωρητών που προστέθηκαν είναι οι εξής : **Bloomberg**, **Addison Lee**, **RAB Capital**, **Soneva** και **Vitabiotics**.
+
+Όσον αφορά το **δεύτερο παραδοτέο** τονίζεται ότι δεν υλοποιήθηκαν όλα τα ζητούμενα. Συγκεκριμένα, για το πρώτο ζητούμενο προστέθηκε κώδικας στο [chart.js](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/chart.js) ώστε να εμφανίζονται  οι εικόνες των δωρητών όταν το ποντίκι εισέρχεται σε κάποιον κύκλο του γραφήματος. 
+```javascript
+var image = document.createElement("img");
+
+	image.src = imageFile;  
+	
+	image.width = 42; //διαστάσεις
+	
+	image.height = 42; //διαστάσεις
+
+	document.getElementById("image_donors").appendChild(image);//appends a node as the last child of a node.
+```
+
 
 ## Συμπεράσματα
 
