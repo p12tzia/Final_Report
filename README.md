@@ -85,10 +85,23 @@ function search(d) { //search function
 }
 </style>
 ```
-Π.χ
+**_Π.χ_**
 ```html
 <h3 class="zoom">Income for each party from private sources.</h3
 ```
+Ακόμη, όταν το ποντίκι βρίσκεται μέσα στον κύκλο κάποιου δωρητή ακούγεται η ονομασία του και το ποσό της δωρεάς. Αυτό επιτυγχάνεται με την χρήση της **ResponsiveVoice** στο αρχείο [chart.js](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/chart.js).
+```javascript
+responsiveVoice.speak(donor + " " + amount + "£","UK English Male",{volume: 1}); //Βρίσκεται εντός της mouseover 
+```
+Όταν ο δείκτης του ποντικιού δεν βρίσκεται πάνω στις μπάλες των δεδομένων τότε δεν ακούγεται η ονομασία και το ποσό της δωρεάς, αυτό επιτυγχάνεται με την συνάρτηση **_cancel()_** εντός της **mouseout**.
+```javascript
+responsiveVoice.cancel(); 
+```
+Ωστόσο, για να χρησιμοποιηθεί για μη διαφημιστικούς λόγους πρέπει να εισαχθεί στον κώδικα [index.html](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/index.html) :
+```html
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+```
+Εν κατακλείδι, για την τελευταία αλλαγή δημιουργήθηκε μία ακόμη επιλογή ομαδοποίησης των δεδομένων (**_Split by the amount of the donation_**) η οποία κατηγοριοποιεί τις δωρεές με βάση το χρηματικό ποσό. Οι τροποποιήσεις για το συγκεκριμένο ερώτημα πραγματοποιήθηκαν σε όλα τα αρχεία.
 ## Συμπεράσματα
 
 ## _Βιβλιογραφία_
