@@ -40,7 +40,7 @@ var fill = d3.scale.ordinal().range(["#FFFF99", "#FF3333", "#000033"]);
     top: 550px;
 }
 ```
-Επιπλέον, προστέθηκε το αρχείο button_sound.mp3 ώστε κάθε φορά που ο χρήστης της εφαρμογής κάνει κλίκ σε μία από τις επιλογές/κουμπιά ομαδοποίησης των δεδομένων να ακούγεται ο χαρακτηριστικός ήχος. Η συγκεκριμένη ενέργεια επιτεύχθηκε με την δημιουργία μιας νέας συνάρτησης **playSound** στον κώδικα [index.html](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/index.html) η οποία αναπαραγάγει τον ήχο.
+Επιπλέον, προστέθηκε το αρχείο **button_sound.mp3** ώστε κάθε φορά που ο χρήστης της εφαρμογής κάνει κλίκ σε μία από τις επιλογές/κουμπιά ομαδοποίησης των δεδομένων να ακούγεται ο χαρακτηριστικός ήχος. Η συγκεκριμένη ενέργεια επιτεύχθηκε με την δημιουργία μιας νέας συνάρτησης **playSound** στον κώδικα [index.html](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/index.html) η οποία αναπαραγάγει τον ήχο.
 
 ```html
 <audio id="sound" src="button_sound.mp3"></audio>
@@ -54,6 +54,19 @@ var fill = d3.scale.ordinal().range(["#FFFF99", "#FF3333", "#000033"]);
 ```
 ```html
 <li><a href="#" role="button" class="pure-button switch" id="all-donations" onclick = "playSound()">All money</a></li>
+```
+Επίσης, για την αναζήτηση του κάθε δωρητή στο **google** δημιουργήθηκε κατάλληλη συνάρτηση ώστε να ανοίγει καινούργιο παράθυρο με τα αποτελέσματα όταν γίνεται κλίκ στην κάθε μπάλα.
+```javascript
+function search(d) { //search function 
+
+	var donor=d.donor;
+	window.open("https://www.google.com/search?q=" + donor);
+
+}
+```
+Συγκεκριμένα αφού δημιουργήθηκε η συνάρτηση τοποθετήθηκε το παρακάτω κομμάτι κώδικα στην συνάρτηση **start** προκειμένου να επιτευχθεί η αναζήτηση όταν γίνεται κλίκ.
+```javascript
+.on("click",search);
 ```
 ## Συμπεράσματα
 
