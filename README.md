@@ -19,11 +19,11 @@
 ## Mέθοδος και Tεχνικές Aνάπτυξης
 Αρχικά, επισημαίνεται ότι ο κώδικας που χρησιμοποιήθηκε βασίζεται στην εργασία [Data Visualization](https://github.com/ioniodi/D3js-uk-political-donations) καθώς και στην [Pie Chart](https://bl.ocks.org/mbostock/3887235) η οποία συνέβαλλε στην δημιουργία ενός ακόμη **D3** διαγράμματος των ίδιων δεδομένων.                                                                                              Οι αλλαγές για το πρώτο παραδοτέο της εργασίας είναι οι εξής:
 Η αλλαγή στα χρώματα από τις μπάλες έγινε με την τροποποίηση στην συγκεκριμένη γραμμή κώδικα του αρχείου [chart.js](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/chart.js) όπως φαίνεται παρακάτω 
-```
+```javascript
 var fill = d3.scale.ordinal().range(["#FFFF99", "#FF3333", "#000033"]);
 ```
 ενώ η αλλαγή των χρωμάτων στα αντίστοιχα πεδία της ομαδοποίησης **_Split by Party_** έγινε στο αρχείο [style.css](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/style.css) και συγκεκριμένα στα εξής πεδία.
-```
+```css
 #conservative {
     background: rgba(255, 51, 51, 0.4);
     top: 110px;
@@ -40,7 +40,7 @@ var fill = d3.scale.ordinal().range(["#FFFF99", "#FF3333", "#000033"]);
 }
 ```
 Επιπλέον, προστέθηκε το αρχείο button_sound.mp3 ώστε κάθε φορά που ο χρήστης της εφαρμογής κάνει κλίκ σε μία από τις επιλογές/κουμπιά ομαδοποίησης των δεδομένων να ακούγεται ο χαρακτηριστικός ήχος. Η συγκεκριμένη ενέργεια επιτεύχθηκε με την δημιουργία μιας νέας συνάρτησης **playSound** στον κώδικα [index.html](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/index.html) η οποία αναπαραγάγει τον ήχο.
-```
+```html,javascript
 <audio id="sound" src="button_sound.mp3"></audio>
     <a onclick = "playSound();"></a>
     <script>
