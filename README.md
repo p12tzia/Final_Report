@@ -150,6 +150,8 @@ var image = document.createElement("img");
 
 Στο αρχείο [index](https://github.com/ioniodi/D3js-uk-political-donations/blob/master/participants/index.html) στην 20η θέση περιλαμβάνεται ο κώδικας προκειμένου να εμφανίζονται τα στοιχεία μου ( **github username** & **picture** ) με κίνηση, διαφορετική από εκείνη του υποδείγματος.
 
+![c.gif](c.gif)
+
 ## Συμπεράσματα
 
 ## _Βιβλιογραφία_
