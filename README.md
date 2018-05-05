@@ -137,7 +137,11 @@ var image = document.createElement("img");
 ![picture.png](pic.png)
 
 Παράλληλα, όπως προαναφέρθηκε, υλοποιήθηκε η δημιουργία ενός ακόμη γραφήματος (**_Pie chart_**) απεικόνισης των ίδιων δεδομένων. Στην νέα οπτικοποίηση ο κώδικας διασπάστηκε σε ξεχωριστά αρχεία **html** για να είναι πιο ευανάγνωστος σε άλλο [αποθετήριο](https://github.com/p15mago/example). Η πρώτη σελίδα ομαδοποιεί τα δεδομένα με βάση το **_entityname_** ενώ οι πληροφορίες που εμφανίζονται σε κάθε **tooltip** έχουν χρώματα αντίστοιχα με το κάθε κομμάτι [index.html](https://github.com/p15mago/example/blob/master/index.html).
+
 ![pie_chart.png](pie_chart.png)
+
+Για την ομαδοποίηση **_Split by type of donor_** δημιουργήθηκαν τρία κουμπία ώστε κάθε κουμπί να οδηγεί στην αντίστοιχη κατήγορία ( **_Societies,Individuals,Trade Unions_** και **_Others_** )  όπως φαίνεται παρακάτω. Όπως και στην πρώτη σελίδα, τα ονόματα των δωρητών έχουν το ίδιο χρώμα με τo αντίστοιχο κομμάτι προκειμένου να είναι πιο εμφανές το κομμάτι που αντιστοιχεί στον κάθε δωρητή. Οι κώδικες για την συγκεκριμένη ομαδοποίηση περιλαμβάνονται στα αρχεία [index2.html](https://github.com/p15mago/example/blob/master/index2.html),  [Individual.html](https://p15mago.github.io/example/Individual.html), [Union.html](https://github.com/p15mago/example/blob/master/Union.html), [Other.html](https://github.com/p15mago/example/blob/master/Other.html).
+
 
 ## Συμπεράσματα
 
