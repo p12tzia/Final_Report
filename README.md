@@ -41,6 +41,9 @@ var fill = d3.scale.ordinal().range(["#FFFF99", "#FF3333", "#000033"]);
     top: 550px;
 }
 ```
+
+**_Η παρακάτω εικόνα απεικονίζει την αλλαγή των χρωμάτων:_**
+![pic](https://github.com/p15mago/sw/blob/2015140/projects/2015140/picture.png)
 Επιπλέον, προστέθηκε το αρχείο **button_sound.mp3** ώστε κάθε φορά που ο χρήστης της εφαρμογής κάνει κλίκ σε μία από τις επιλογές/κουμπιά ομαδοποίησης των δεδομένων να ακούγεται ο χαρακτηριστικός ήχος. Η συγκεκριμένη ενέργεια επιτεύχθηκε με την δημιουργία μιας νέας συνάρτησης **playSound** στον κώδικα [index.html](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/index.html) η οποία αναπαραγάγει τον ήχο.
 
 ```html
@@ -90,6 +93,9 @@ function search(d) { //search function
 ```html
 <h3 class="zoom">Income for each party from private sources.</h3
 ```
+**_Παρακάτω παρουσιάζεται σχετικό gif με την αναζήτηση και την μεγέθυνση των γραμμάτων:_**
+![a.gif](a.gif)
+
 Ακόμη, όταν το ποντίκι βρίσκεται μέσα στον κύκλο κάποιου δωρητή ακούγεται η ονομασία του και το ποσό της δωρεάς. Αυτό επιτυγχάνεται με την χρήση της **ResponsiveVoice** στο αρχείο [chart.js](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/chart.js).
 ```javascript
 responsiveVoice.speak(donor + " " + amount + "£","UK English Male",{volume: 1}); //Βρίσκεται εντός της mouseover 
@@ -112,10 +118,9 @@ function amounts(e) {
 			.attr("cy", function(d) {return d.y; });
 }
 ```
+**_Παρακάτω απεικονίζεται η νέα ομαδοποίηση:_**
+![pic1](https://github.com/p15mago/sw/blob/2015140/projects/2015140/picture4.png)
 Επισημαίνεται η δημιουργία ενός αρχείου **.csv** με τα στοιχεία μου καθώς και προσθήκη 5 εικόνων από δωρητές. Συγκεκριμένα οι εικόνες των δωρητών που προστέθηκαν είναι οι εξής : **Bloomberg**, **Addison Lee**, **RAB Capital**, **Soneva** και **Vitabiotics**.
-
-**_Παρακάτω παρουσιάζεται σχετικό gif με την αναζήτηση και την μεγέθυνση των γραμμάτων:_**
-![a.gif](a.gif)
 
 Όσον αφορά το **δεύτερο παραδοτέο** τονίζεται ότι δεν υλοποιήθηκαν όλα τα ζητούμενα. Συγκεκριμένα, για το πρώτο ζητούμενο προστέθηκε κώδικας στο [chart.js](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/chart.js) ώστε να εμφανίζονται  οι εικόνες των δωρητών όταν το ποντίκι εισέρχεται σε κάποιον κύκλο του γραφήματος. 
 ```javascript
