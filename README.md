@@ -43,7 +43,7 @@ var fill = d3.scale.ordinal().range(["#FFFF99", "#FF3333", "#000033"]);
 ```
 
 **_Η παρακάτω εικόνα απεικονίζει την αλλαγή των χρωμάτων:_**
-![pic](https://github.com/p15mago/sw/blob/2015140/projects/2015140/picture.png)
+![pic.png](https://github.com/p15mago/sw/blob/2015140/projects/2015140/picture.png)
 Επιπλέον, προστέθηκε το αρχείο **button_sound.mp3** ώστε κάθε φορά που ο χρήστης της εφαρμογής κάνει κλίκ σε μία από τις επιλογές/κουμπιά ομαδοποίησης των δεδομένων να ακούγεται ο χαρακτηριστικός ήχος. Η συγκεκριμένη ενέργεια επιτεύχθηκε με την δημιουργία μιας νέας συνάρτησης **playSound** στον κώδικα [index.html](https://github.com/p15mago/D3js-uk-political-donations/blob/gh-pages/index.html) η οποία αναπαραγάγει τον ήχο.
 
 ```html
