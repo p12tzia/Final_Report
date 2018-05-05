@@ -156,3 +156,10 @@ var image = document.createElement("img");
 
 ## _Βιβλιογραφία_
 
+https://www.w3schools.com/
+
+https://responsivevoice.org/
+
+https://stackoverflow.com/
+
+https://github.com/d3/d3/wiki/Gallery
