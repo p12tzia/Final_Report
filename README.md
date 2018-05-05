@@ -141,7 +141,8 @@ var image = document.createElement("img");
 ![pie_chart.png](pie_chart.png)
 
 Για την ομαδοποίηση **_Split by type of donor_** δημιουργήθηκαν τρία κουμπία ώστε κάθε κουμπί να οδηγεί στην αντίστοιχη κατήγορία ( **_Societies,Individuals,Trade Unions_** και **_Others_** )  όπως φαίνεται παρακάτω. Όπως και στην πρώτη σελίδα, τα ονόματα των δωρητών έχουν το ίδιο χρώμα με τo αντίστοιχο κομμάτι προκειμένου να είναι πιο εμφανές το κομμάτι που αντιστοιχεί στον κάθε δωρητή. Οι κώδικες για την συγκεκριμένη ομαδοποίηση περιλαμβάνονται στα αρχεία [index2.html](https://github.com/p15mago/example/blob/master/index2.html),  [Individual.html](https://p15mago.github.io/example/Individual.html), [Union.html](https://github.com/p15mago/example/blob/master/Union.html), [Other.html](https://github.com/p15mago/example/blob/master/Other.html).
-Καταληκτικά, στην τελεταία ομαδοποίηση (_**Split by party_**) η κάθε πίτα με τα δεδομένα εμφανίζεται πάλι σε ξεχωριστή σελίδα ανάλογα με την κατηγορία ([labour.html](https://github.com/p15mago/example/blob/master/labour.html), [con.html](https://github.com/p15mago/example/blob/master/con.html), [Lib_Dem.html](https://github.com/p15mago/example/blob/master/Lib_Dem.html)
+
+Καταληκτικά, στην τελεταία ομαδοποίηση (_**Split by party_**) η κάθε πίτα με τα δεδομένα εμφανίζεται πάλι σε ξεχωριστή σελίδα ανάλογα με την κατηγορία ([labour.html](https://github.com/p15mago/example/blob/master/labour.html), [con.html](https://github.com/p15mago/example/blob/master/con.html), [Lib_Dem.html](https://github.com/p15mago/example/blob/master/Lib_Dem.html))
 
 ## Συμπεράσματα
 
