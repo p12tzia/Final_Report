@@ -156,12 +156,12 @@ var image = document.createElement("img");
 
 ## _Βιβλιογραφία_
 
-https://www.w3schools.com/
+[W3schools](https://www.w3schools.com/)
 
-https://responsivevoice.org/
+[Responsivevoice](https://responsivevoice.org/)
 
-https://stackoverflow.com/
+[Stackoverflow](https://stackoverflow.com/)
 
-https://github.com/d3/d3/wiki/Gallery
+[D3js](https://github.com/d3/d3/wiki/Gallery)
 
-https://www.tutorialspoint.com/d3js/index.htm
+[Tutorialspoint](https://www.tutorialspoint.com/d3js/index.htm)
