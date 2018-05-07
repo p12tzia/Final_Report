@@ -137,7 +137,7 @@ var image = document.createElement("img");
 	image.setAttribute("onerror",'this.src=\"https://github.com/favicon.ico\";'); //σε περίπτωση που δεν υπάρχει εικόνα δωρητή να εμφανίζεται το logo του github
 	document.getElementById("image_donors").appendChild(image);//appends a node as the last child of a node.
 ```
-![picture.png](pic.png)
+![picture1.png](picture1.png)
 
 Παράλληλα, όπως προαναφέρθηκε, υλοποιήθηκε η δημιουργία ενός ακόμη γραφήματος (**_Pie chart_**) απεικόνισης των ίδιων δεδομένων. Στην νέα οπτικοποίηση ο κώδικας διασπάστηκε σε ξεχωριστά αρχεία **html** για να είναι πιο ευανάγνωστος σε άλλο [αποθετήριο](https://github.com/p15mago/example). Η πρώτη σελίδα ομαδοποιεί τα δεδομένα με βάση το **_entityname_** ενώ οι πληροφορίες που εμφανίζονται σε κάθε **tooltip** έχουν χρώματα αντίστοιχα με το κάθε κομμάτι [index.html](https://github.com/p15mago/example/blob/master/index.html).
 
