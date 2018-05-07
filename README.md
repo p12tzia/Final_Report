@@ -132,7 +132,7 @@ var image = document.createElement("img");
 	image.width = 42; //διαστάσεις
 	
 	image.height = 42; //διαστάσεις
-
+	image.setAttribute("onerror",'this.src=\"https://github.com/favicon.ico\";'); //σε περίπτωση που δεν υπάρχει εικόνα δωρητή να εμφανίζεται το logo του github
 	document.getElementById("image_donors").appendChild(image);//appends a node as the last child of a node.
 ```
 ![picture.png](pic.png)
@@ -153,7 +153,7 @@ var image = document.createElement("img");
 ![c.gif](c.gif)
 
 ## Συμπεράσματα
-
+Έπειτα απο την ολοκλήρωση της παρούσας εργασίας και μελέτης των γλωσσών διαδικτύου **_html_**,**_css_** και **_javascript_** εξάγονται ορισμένα συμπεράσματα.
 ## _Βιβλιογραφία_
 
 [W3schools](https://www.w3schools.com/)
