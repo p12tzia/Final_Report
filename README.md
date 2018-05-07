@@ -7,6 +7,7 @@
 * Προσωπικό αποθετήριο του κώδικα: [Link Αποθετηρίου Κώδικα](https://github.com/p15mago/D3js-uk-political-donations)
 * Link για το εκτελέσιμο: [Link Εκτελέσιμου](https://p15mago.github.io/D3js-uk-political-donations/)
 * Link για την οπτικοποίηση των ίδιων δεδομένων με την χρήση άλλου γραφήματος: [Pie Chart UK](https://p15mago.github.io/example/)
+* Link για το αποθετήριο του κώδικα: [Link Αποθετηρίου Κώδικα Pie Chart UK](https://github.com/p15mago/example)
 
 ## Εισαγωγή
 Η συγκεκριμένη εργασία πραγματοποιήθηκε στα πλαίσια του μαθήματος **Τεχνολογία Λογισμικού** του Στ' Εξαμήνου με στόχο την εκμάθηση της βιβλιοθήκης **D3** της **javascript**, την χρήση της **html** και της **css** καθώς και τις σελίδες **github pages** ώστε να επιτευχθεί η οπτικοποίηση δεδομένων από αρχείο της μορφής **.csv** και ορισμένες τροποποιήσεις όπως αναφέρονται παρακάτω.
@@ -171,3 +172,11 @@ tooltip.select('.donor').html('Source: ' +"<span style='color: " + c + ";'><stro
 [D3js](https://github.com/d3/d3/wiki/Gallery)
 
 [Tutorialspoint](https://www.tutorialspoint.com/d3js/index.htm)
+
+[W3.org](www.w3.org/Style/Examples/011/firstcss.en.html)
+
+[Youtube](https://www.youtube.com/)
+
+[CodePen](https://codepen.io/)
+
+[JavaScript basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
