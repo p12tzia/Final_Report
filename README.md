@@ -153,7 +153,7 @@ tooltip.select('.donor').html('Source: ' +"<span style='color: " + c + ";'><stro
 
 ![b.gif](b.gif)
 
-Καταληκτικά, στην τελεταία ομαδοποίηση (**_Split by party_**) η κάθε πίτα με τα δεδομένα εμφανίζεται πάλι σε ξεχωριστή σελίδα ανάλογα με την κατηγορία ([labour.html](https://github.com/p15mago/example/blob/master/labour.html), [con.html](https://github.com/p15mago/example/blob/master/con.html), [Lib_Dem.html](https://github.com/p15mago/example/blob/master/Lib_Dem.html)).
+Καταληκτικά, στην τελευταία ομαδοποίηση (**_Split by party_**) η κάθε πίτα με τα δεδομένα εμφανίζεται πάλι σε ξεχωριστή σελίδα ανάλογα με την κατηγορία ([labour.html](https://github.com/p15mago/example/blob/master/labour.html), [con.html](https://github.com/p15mago/example/blob/master/con.html), [Lib_Dem.html](https://github.com/p15mago/example/blob/master/Lib_Dem.html)).
 
 Στο αρχείο [index](https://github.com/ioniodi/D3js-uk-political-donations/blob/master/participants/index.html) στην 20η θέση περιλαμβάνεται ο κώδικας προκειμένου να εμφανίζονται τα στοιχεία μου ( **github username** & **picture** ) με κίνηση, διαφορετική από εκείνη του υποδείγματος.
 
